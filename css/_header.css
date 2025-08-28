@@ -7,18 +7,20 @@ header {
     align-items: center;
 }
 
-nav {
+nav ul {
     list-style: none;
     display: flex;
+    padding: 0;
+}
+
+nav ul li {
     margin-left: 0.8rem;
 }
 
-a {
-    text-decoration: none;
+nav ul li a {
+    padding: 0.5rem 1rem;
     color: var(--color-text);
-    padding: 1rem;
-}
-
-a:hover {
-    color: var(--color-accent);
+    text-decoration: none;
+    display: block;
+    transition: var(--color-accent) 0.3s ease;
 }

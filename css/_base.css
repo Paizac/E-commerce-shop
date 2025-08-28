@@ -21,9 +21,20 @@ body {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: var(--color-accent)
 }
