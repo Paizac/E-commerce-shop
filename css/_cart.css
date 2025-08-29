@@ -1,0 +1,24 @@
+.checkout-layout {
+    display: flex;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
