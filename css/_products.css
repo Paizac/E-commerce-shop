@@ -1,3 +1,11 @@
+section#products {
+    padding: 4rem 0;
+}
+
+section#products h2 {
+    margin-bottom: 2rem;
+}
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -9,11 +17,22 @@
     border-radius: 6px;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
     width: 100%;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
 }
 
 .product-info {
@@ -35,10 +54,16 @@
     cursor: pointer;
     width: 100%;
     margin-top: 0.8rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .btn.add-to-cart:hover {
     background-color: var(--color-secondary);
+    transform: scale(1.05);
+}
+
+.btn.add-to-cart:active {
+    transform: scale(0.98);
 }
 
 .product-card .price {
