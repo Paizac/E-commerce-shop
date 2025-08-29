@@ -5,7 +5,7 @@
 }
 
 .product-card {
-    background-color: var(--color-bg);
+    background-color: #1E293B;
     border-radius: 6px;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
     overflow: hidden;
@@ -20,24 +20,29 @@
     padding: 1.5rem;
 }
 
-h3,
-.price {
+.product-card h3 {
     margin-bottom: 1rem;
-    color: var(--color-secondary);
     font-weight: 500;
+    color: var(--color-text);
 }
 
-.btn .add-to-cart {
+.btn.add-to-cart {
     background-color: var(--color-accent);
     color: var(--color-text);
     border: none;
     padding: 0.8rem;
     border-radius: 4px;
     cursor: pointer;
-}
-
-.btn .add-to-cart:hover {
-    background-color: var(--color-secondary);
     width: 100%;
     margin-top: 0.8rem;
+}
+
+.btn.add-to-cart:hover {
+    background-color: var(--color-secondary);
+}
+
+.product-card .price {
+    margin-bottom: 1rem;
+    color: var(--color-secondary);
+    font-weight: 500;
 }
