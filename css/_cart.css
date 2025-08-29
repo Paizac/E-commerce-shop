@@ -22,3 +22,10 @@
 .cart-item-info {
     flex-grow: 1;
 }
+
+.cart-details {
+    background-color: #1E293B;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
