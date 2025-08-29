@@ -1,0 +1,24 @@
+.form-group {
+    margin-bottom: 0.8rem
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.order-form input,
+.order-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 4px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+.order-form textarea:focus,
+.order-form input:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+}
