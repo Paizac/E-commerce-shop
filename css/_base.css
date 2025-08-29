@@ -31,10 +31,12 @@
         h1 {
             font-family: "Montserrat", sans-serif;
             font-weight: 700;
-            background: linear-gradient(var(--color-accent), var(--color-secondary));
+            background: linear-gradient(to right, var(--color-accent), var(--color-text));
             background-clip: text;
             -webkit-background-clip: text;
-            color: transparent
+            color: transparent;
+            background-size: 200%;
+            animation: gradient-animation 3s ease infinite;
         }
         
         .container {
@@ -51,5 +53,17 @@
             to {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+        
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
             }
         }
