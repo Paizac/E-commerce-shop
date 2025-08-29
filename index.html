@@ -64,45 +64,49 @@
             <section id="cart">
                 <h2>Cart and delivery data</h2>
                 <div class="checkout-layout">
+                    <!-- KOLUMNA 1: KOSZYK -->
                     <div class="cart-details">
                         <ul class="cart-items-list">
                             <li class="cart-item">
                                 <img src="img/cofee-bag.jpg" alt="Package of coffee from Ethiopia">
                                 <div class="cart-item-info">
-                                    <h4>Coffee bag</h4>
-                                    <p class="price">Price: $19.99</p>
-                                    <button class="btn remove-item-btn">Remove</button>
+                                    <h4>Coffe bag</h4>
+                                    <p class="price">$19.99</p>
                                 </div>
-                                <li class="cart-item">
-                                    <img src="img/cofee-bag.jpg" alt="Package of coffee from Ethiopia">
-                                    <div class="cart-item-info">
-                                        <h4>Coffee bag</h4>
-                                        <p class="price">Price: $19.99</p>
-                                        <button class="btn remove-item-btn">Remove</button>
-                                    </div>
-                                    <li class="cart-item">
-                                        <img src="img/cofee-bag.jpg" alt="Package of coffee from Ethiopia">
-                                        <div class="cart-item-info">
-                                            <h4>Coffee bag</h4>
-                                            <p class="price">Price: $19.99</p>
-                                            <button class="btn remove-item-btn">Remove</button>
-                                        </div>
-                                        <div class="cart-summary">
-                                            <p>Total: <strong>$59.97</strong></p>
-                                        </div>
+                                <button class="btn remove-item-btn">Remove</button>
+                            </li>
+                            <li class="cart-item">
+                                <img src="img/cofee-bag.jpg" alt="Package of coffee from Ethiopia">
+                                <div class="cart-item-info">
+                                    <h4>Coffe bag</h4>
+                                    <p class="price">$19.99</p>
+                                </div>
+                                <button class="btn remove-item-btn">Remove</button>
+                            </li>
                         </ul>
-                        <form class="order-form">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="address">Address:</label>
-                            <input type="text" id="address" name="address" required>
-                            <button type="submit" class="btn btn-submit">Place order</button>
-                        </form>
+                        <div class="cart-summary">
+                            <p>Total: <strong>$59.97</strong></p>
+                        </div>
                     </div>
+
+                    <form class="order-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <textarea id="address" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Place order</button>
+                    </form>
+                </div>
             </section>
-            </div>
+        </div>
     </main>
     <footer>
         <div class="container">
