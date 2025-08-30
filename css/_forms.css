@@ -1,10 +1,17 @@
 .form-group {
-    margin-bottom: 0.8rem
+    margin-bottom: 0.8rem;
+    position: relative;
 }
 
 .order-form label {
     display: block;
     margin-bottom: 0.4rem;
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 
 .order-form input,
@@ -15,6 +22,7 @@
     border-radius: 4px;
     background-color: var(--color-bg);
     color: var(--color-text);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .order-form textarea:focus,
@@ -22,6 +30,19 @@
     outline: none;
     border-color: var(--color-accent);
     box-shadow: 0 0 0 2px var(--color-accent);
+    transform: scale(1.05);
+}
+
+.order-form input:focus+label,
+.order-form textarea:focus+label,
+.order-form input:valid+label,
+.order-form textarea:valid+label {
+    top: -0.8rem;
+    left: 0.8rem;
+    font-size: 0.8rem;
+    background-color: var(--color-bg);
+    padding: 0 0.2rem;
+    color: var(--color-accent);
 }
 
 .order-form {

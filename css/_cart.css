@@ -61,3 +61,14 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+section#cart {
+    padding: 4rem 0;
+}
+
+section#cart h2 {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
