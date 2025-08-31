@@ -1,4 +1,4 @@
-.footer {
+footer {
     padding: 6rem 0 2rem 0;
     background-color: #1E293B;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
@@ -16,9 +16,10 @@ footer ul {
     color: var(--color-secondary);
     list-style: none;
     padding: 0;
-    footer li {
-        margin-bottom: 0.5rem;
-    }
+}
+
+footer li {
+    margin-bottom: 0.5rem;
 }
 
 .footer a {
@@ -58,4 +59,9 @@ footer ul {
     .footer-content {
         grid-template-columns: 1fr;
     }
+}
+
+footer p,
+footer ul li a {
+    color: var(--color-text);
 }
